@@ -19,10 +19,10 @@ export default function HeroSection() {
         />
       )}
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
-        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-foreground">
+        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-white">
           Pavan K
         </h1>
-        <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
+        <p className="mt-6 max-w-2xl text-lg text-gray-200 md:text-xl">
           A passionate developer transforming ideas into elegant,
           performant, and user-friendly web solutions.
         </p>

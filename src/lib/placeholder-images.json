@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Abstract pink and orange background with geometric shapes.",
-      "imageUrl": "https://images.unsplash.com/photo-1599238885627-65e473e35794?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "abstract pink"
+      "description": "Abstract black sand waves.",
+      "imageUrl": "https://images.unsplash.com/photo-1548680210-9b455902b8a4?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "black sand"
     },
     {
       "id": "project-1",
