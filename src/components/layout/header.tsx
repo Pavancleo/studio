@@ -16,7 +16,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-background/50 backdrop-blur-2xl">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-white/5 backdrop-blur-lg">
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
@@ -38,12 +38,13 @@ export default function Header() {
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button variant="ghost" size="icon" asChild>
-            <Link href="/login">
+           <Link 
+              href="/login"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-background/50 p-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:bg-background/70 hover:text-foreground hover:shadow-[0_0_15px_2px_hsl(var(--chart-3)/70%)]"
+            >
               <User className="h-5 w-5" />
               <span className="sr-only">Admin Login</span>
             </Link>
-          </Button>
           {isClient && (
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
