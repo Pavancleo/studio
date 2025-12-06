@@ -73,16 +73,16 @@ export const education = [
 
 export const certifications = [
   {
-    name: 'Google Certified Professional Cloud Architect',
-    issuer: 'Google Cloud',
-    date: 'Issued Jun 2023',
+    name: 'Wadhwani Foundations-Employabilty skills',
+    issuer: 'SWAYAM',
+    date: 'Issued Jun 2025',
     Icon: Award,
     imageId: 'cert-1',
   },
   {
-    name: 'Certified Kubernetes Administrator (CKA)',
-    issuer: 'The Linux Foundation',
-    date: 'Issued Dec 2022',
+    name: 'Internship completion in Artificial intelligence',
+    issuer: 'Teachnook',
+    date: 'Issued Dec 2024',
     Icon: Award,
     imageId: 'cert-2',
   },
