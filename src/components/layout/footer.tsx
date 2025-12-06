@@ -2,11 +2,13 @@ import Link from "next/link";
 import { Waves } from "lucide-react";
 import { contactInfo } from "@/lib/data";
 import { Button } from "@/components/ui/button";
+import AnimatedBackground from "@/components/effects/animated-background";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="border-t border-black/10 bg-blue-200/40 backdrop-blur-2xl">
-      <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+    <footer id="contact" className="relative border-t border-black/10 overflow-hidden">
+      <AnimatedBackground />
+      <div className="relative z-10 container mx-auto px-4 py-8 sm:px-6 lg:px-8 bg-background/60 backdrop-blur-sm">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex items-center space-x-2">
             <Waves className="h-6 w-6 text-primary" />
