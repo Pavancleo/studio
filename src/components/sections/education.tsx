@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export default function EducationSection() {
   return (
-    <section id="education" className="py-16 md:py-24 bg-background/50 backdrop-blur-xl border-t border-b border-white/20">
+    <section id="education" className="py-16 md:py-24 bg-black/30 backdrop-blur-2xl border-t border-b border-white/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-white">

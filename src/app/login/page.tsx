@@ -14,7 +14,7 @@ import { Waves } from "lucide-react";
 export default function LoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-900">
-      <Card className="mx-auto max-w-sm bg-black/30 backdrop-blur-xl border-white/20 text-white">
+      <Card className="mx-auto max-w-sm bg-black/30 backdrop-blur-2xl border-white/20 text-white">
         <CardHeader>
           <div className="flex justify-center mb-4">
              <Waves className="h-10 w-10 text-primary" />

@@ -23,7 +23,7 @@ export default function AdminLayout({
 }) {
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr] bg-slate-900 text-white">
-      <div className="hidden border-r border-white/20 bg-black/30 backdrop-blur-xl md:block">
+      <div className="hidden border-r border-white/20 bg-black/30 backdrop-blur-2xl md:block">
         <div className="flex h-full max-h-screen flex-col gap-2">
           <div className="flex h-14 items-center border-b border-white/20 px-4 lg:h-[60px] lg:px-6">
             <Link href="/" className="flex items-center gap-2 font-semibold">
@@ -55,7 +55,7 @@ export default function AdminLayout({
             </nav>
           </div>
           <div className="mt-auto p-4">
-            <Card className="bg-white/10 border-white/20">
+            <Card className="bg-white/10 border-white/20 backdrop-blur-2xl">
               <CardHeader className="p-2 pt-0 md:p-4">
                 <CardTitle>Upgrade</CardTitle>
                 <CardDescription className="text-slate-300">
@@ -73,7 +73,7 @@ export default function AdminLayout({
         </div>
       </div>
       <div className="flex flex-col">
-        <header className="flex h-14 items-center gap-4 border-b border-white/20 bg-black/30 backdrop-blur-xl px-4 lg:h-[60px] lg:px-6">
+        <header className="flex h-14 items-center gap-4 border-b border-white/20 bg-black/30 backdrop-blur-2xl px-4 lg:h-[60px] lg:px-6">
            <Link href="/" className="text-slate-300 hover:text-primary transition-colors md:hidden">
               <Home className="h-5 w-5" />
               <span className="sr-only">Back to site</span>

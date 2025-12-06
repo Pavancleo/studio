@@ -9,7 +9,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function CertificationsSection() {
   return (
-    <section id="certifications" className="py-16 md:py-24 bg-background/50 backdrop-blur-xl">
+    <section id="certifications" className="py-16 md:py-24 bg-black/30 backdrop-blur-2xl">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-white">
@@ -26,7 +26,7 @@ export default function CertificationsSection() {
               <Dialog key={cert.name}>
                 <DialogTrigger asChild>
                   <Card 
-                    className="flex items-start p-6 bg-card rounded-xl shadow-md transition-all duration-300 hover:-translate-y-1 cursor-pointer bg-white/10 hover:bg-white/20 border border-white/20 hover:border-primary hover:shadow-[0_0_15px_2px_hsl(var(--primary)/50%)]"
+                    className="flex items-start p-6 bg-white/10 rounded-xl shadow-md transition-all duration-300 cursor-pointer backdrop-blur-2xl border border-white/20 hover:border-primary hover:bg-white/20 hover:shadow-[0_0_25px_5px_hsl(var(--primary)/20%)] hover:-translate-y-1"
                   >
                     <cert.Icon className="h-8 w-8 text-primary mr-4 mt-1 flex-shrink-0" />
                     <div>
@@ -39,7 +39,7 @@ export default function CertificationsSection() {
                   </Card>
                 </DialogTrigger>
                 {certImage && (
-                   <DialogContent className="max-w-3xl bg-slate-900/50 backdrop-blur-xl border-white/20">
+                   <DialogContent className="max-w-3xl bg-slate-900/50 backdrop-blur-2xl border-white/20">
                     <DialogHeader>
                       <DialogTitle className="text-white">{cert.name}</DialogTitle>
                     </DialogHeader>
