@@ -197,7 +197,7 @@ export default function ProjectsSection() {
             const projectImage = project.imageId ? PlaceHolderImages.find(p => p.id === project.imageId) : undefined;
             return (
               <Card 
-                key={project.title} 
+                key={`${project.title}-${index}`}
                 className="overflow-hidden bg-background/30 backdrop-blur-2xl border border-black/10 rounded-xl shadow-lg transition-all duration-300 hover:bg-background/50 hover:border-primary hover:shadow-[0_0_35px_8px_hsl(var(--primary)/40%)] hover:-translate-y-1"
               >
                 <CardHeader>
