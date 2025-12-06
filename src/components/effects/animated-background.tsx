@@ -60,7 +60,7 @@ export default function AnimatedBackground() {
           list-style: none;
           width: 20px;
           height: 20px;
-          background: hsl(var(--primary) / 0.2);
+          background: hsl(var(--primary) / 0.4);
           animation: animate 25s linear infinite;
           bottom: -150px;
         }
@@ -69,7 +69,7 @@ export default function AnimatedBackground() {
           width: 80px;
           height: 80px;
           animation-delay: 0s;
-          background-color: hsl(var(--chart-1) / 0.3);
+          background-color: hsl(var(--chart-1) / 0.5);
         }
         .circles li:nth-child(2) {
           left: 10%;
@@ -77,14 +77,14 @@ export default function AnimatedBackground() {
           height: 20px;
           animation-delay: 2s;
           animation-duration: 12s;
-          background-color: hsl(var(--chart-2) / 0.3);
+          background-color: hsl(var(--chart-2) / 0.5);
         }
         .circles li:nth-child(3) {
           left: 70%;
           width: 20px;
           height: 20px;
           animation-delay: 4s;
-          background-color: hsl(var(--chart-3) / 0.3);
+          background-color: hsl(var(--chart-3) / 0.5);
         }
         .circles li:nth-child(4) {
           left: 40%;
@@ -92,28 +92,28 @@ export default function AnimatedBackground() {
           height: 60px;
           animation-delay: 0s;
           animation-duration: 18s;
-          background-color: hsl(var(--chart-4) / 0.3);
+          background-color: hsl(var(--chart-4) / 0.5);
         }
         .circles li:nth-child(5) {
           left: 65%;
           width: 20px;
           height: 20px;
           animation-delay: 0s;
-          background-color: hsl(var(--chart-5) / 0.3);
+          background-color: hsl(var(--chart-5) / 0.5);
         }
         .circles li:nth-child(6) {
           left: 75%;
           width: 110px;
           height: 110px;
           animation-delay: 3s;
-          background-color: hsl(var(--chart-1) / 0.2);
+          background-color: hsl(var(--chart-1) / 0.4);
         }
         .circles li:nth-child(7) {
           left: 35%;
           width: 150px;
           height: 150px;
           animation-delay: 7s;
-          background-color: hsl(var(--chart-3) / 0.3);
+          background-color: hsl(var(--chart-3) / 0.5);
         }
         .circles li:nth-child(8) {
           left: 50%;
@@ -121,7 +121,7 @@ export default function AnimatedBackground() {
           height: 25px;
           animation-delay: 15s;
           animation-duration: 45s;
-          background-color: hsl(var(--chart-2) / 0.25);
+          background-color: hsl(var(--chart-2) / 0.45);
         }
         .circles li:nth-child(9) {
           left: 20%;
@@ -129,7 +129,7 @@ export default function AnimatedBackground() {
           height: 15px;
           animation-delay: 2s;
           animation-duration: 35s;
-          background-color: hsl(var(--chart-4) / 0.35);
+          background-color: hsl(var(--chart-4) / 0.55);
         }
         .circles li:nth-child(10) {
           left: 85%;
@@ -137,7 +137,7 @@ export default function AnimatedBackground() {
           height: 150px;
           animation-delay: 0s;
           animation-duration: 11s;
-          background-color: hsl(var(--chart-5) / 0.2);
+          background-color: hsl(var(--chart-5) / 0.4);
         }
         .circles li:nth-child(11) {
           left: 5%;
@@ -145,14 +145,14 @@ export default function AnimatedBackground() {
           height: 40px;
           animation-delay: 5s;
           animation-duration: 20s;
-          background-color: hsl(var(--chart-1) / 0.3);
+          background-color: hsl(var(--chart-1) / 0.5);
         }
         .circles li:nth-child(12) {
           left: 15%;
           width: 70px;
           height: 70px;
           animation-delay: 8s;
-          background-color: hsl(var(--chart-2) / 0.3);
+          background-color: hsl(var(--chart-2) / 0.5);
         }
         .circles li:nth-child(13) {
           left: 45%;
@@ -160,14 +160,14 @@ export default function AnimatedBackground() {
           height: 30px;
           animation-delay: 6s;
           animation-duration: 30s;
-          background-color: hsl(var(--chart-3) / 0.3);
+          background-color: hsl(var(--chart-3) / 0.5);
         }
         .circles li:nth-child(14) {
           left: 55%;
           width: 90px;
           height: 90px;
           animation-delay: 10s;
-          background-color: hsl(var(--chart-4) / 0.3);
+          background-color: hsl(var(--chart-4) / 0.5);
         }
         .circles li:nth-child(15) {
           left: 80%;
@@ -175,14 +175,14 @@ export default function AnimatedBackground() {
           height: 25px;
           animation-delay: 12s;
           animation-duration: 22s;
-          background-color: hsl(var(--chart-5) / 0.3);
+          background-color: hsl(var(--chart-5) / 0.5);
         }
         .circles li:nth-child(16) {
           left: 60%;
           width: 120px;
           height: 120px;
           animation-delay: 9s;
-          background-color: hsl(var(--chart-1) / 0.25);
+          background-color: hsl(var(--chart-1) / 0.45);
         }
         .circles li:nth-child(17) {
           left: 30%;
@@ -190,14 +190,14 @@ export default function AnimatedBackground() {
           height: 50px;
           animation-delay: 1s;
           animation-duration: 28s;
-          background-color: hsl(var(--chart-2) / 0.2);
+          background-color: hsl(var(--chart-2) / 0.4);
         }
         .circles li:nth-child(18) {
           left: 90%;
           width: 20px;
           height: 20px;
           animation-delay: 14s;
-          background-color: hsl(var(--chart-3) / 0.3);
+          background-color: hsl(var(--chart-3) / 0.5);
         }
         .circles li:nth-child(19) {
           left: 2%;
@@ -205,14 +205,14 @@ export default function AnimatedBackground() {
           height: 100px;
           animation-delay: 6s;
           animation-duration: 15s;
-          background-color: hsl(var(--chart-4) / 0.25);
+          background-color: hsl(var(--chart-4) / 0.45);
         }
         .circles li:nth-child(20) {
           left: 95%;
           width: 35px;
           height: 35px;
           animation-delay: 3s;
-          background-color: hsl(var(--chart-5) / 0.2);
+          background-color: hsl(var(--chart-5) / 0.4);
         }
         @keyframes animate {
           0%{
