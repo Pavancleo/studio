@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex items-center space-x-2">
             <Waves className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline"></> P | Portfolio</span>
+            <span className="font-bold font-headline">P | Portfolio</span>
           </div>
           <div className="flex flex-col items-center gap-4 text-center md:items-end">
             <p className="text-muted-foreground">Get in touch:</p>

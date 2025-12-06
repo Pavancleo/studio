@@ -22,7 +22,7 @@ export default function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <Waves className="h-6 w-6 text-primary" />
             <span className="font-bold font-headline sm:inline-block">
-              </> P | Portfolio
+              P | Portfolio
             </span>
           </Link>
           <nav className="hidden gap-6 text-sm md:flex">
