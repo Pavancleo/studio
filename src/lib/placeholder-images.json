@@ -45,7 +45,7 @@
     {
       "id": "cert-2",
       "description": "Placeholder for second certificate",
-      "imageUrl": "pavan2.jpg",
+      "imageUrl": "/images/pavan2.jpg",
       "imageHint": "certificate document"
     },
     {
