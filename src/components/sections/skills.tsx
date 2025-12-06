@@ -7,7 +7,7 @@ export default function SkillsSection() {
     <section id="skills" className="relative py-16 md:py-24 bg-blue-100/50 backdrop-blur-2xl">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl" data-text="Technical Proficiency">
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
             Technical Proficiency
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
