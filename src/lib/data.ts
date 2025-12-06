@@ -62,6 +62,12 @@ export const education = [
     years: '2022 - 2024',
     Icon: GraduationCap,
   },
+  {
+    degree: 'Middle School',
+    institution: 'D.A.V Mat Hig Sec School',
+    years: '2009 - 2022',
+    Icon: GraduationCap,
+  },
 ];
 
 export const certifications = [
