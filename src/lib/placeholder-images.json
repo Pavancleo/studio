@@ -9,19 +9,19 @@
     {
       "id": "project-2",
       "description": "Placeholder for second project",
-      "imageUrl": "https://images.unsplash.com/photo-1603202662747-00e33e7d1468?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzY0OTc5MDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/pavan6.jpg",
       "imageHint": "business meeting"
     },
     {
       "id": "project-3",
       "description": "Placeholder for third project",
-      "imageUrl": "https://images.unsplash.com/photo-1557243962-0a093922933f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjcmVhdGl2ZSUyMGRlc2lnbnxlbnwwfHx8fDE3NjQ5MDg2NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/pavan5.jpg",
       "imageHint": "creative design"
     },
     {
       "id": "project-4",
       "description": "Placeholder for fourth project",
-      "imageUrl": "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc2NDk2ODM0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/pavan5.jpg",
       "imageHint": "data analytics"
     },
     {
