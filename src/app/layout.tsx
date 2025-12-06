@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Liquidfolio",
+  title: "P | Portfolio",
   description: "A liquid-smooth portfolio built with Next.js and Firebase.",
 };
 
