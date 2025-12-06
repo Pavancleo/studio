@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     title: 'In Development',
-    description: 'A full-stack e-commerce solution with features like product management, user authentication, and a payment gateway.',
+    description: 'working',
     repoUrl: '#',
   },
   {
