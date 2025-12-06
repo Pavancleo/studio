@@ -14,11 +14,13 @@ export default function HeroSection() {
           src={heroBg.imageUrl}
           alt={heroBg.description}
           fill
-          className="object-cover"
+          className="object-cover z-0"
           data-ai-hint={heroBg.imageHint}
+          priority
         />
       )}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
+      <div className="absolute inset-0 bg-black/50 z-10" />
+      <div className="relative z-20 flex h-full flex-col items-center justify-center text-center">
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-white">
           Pavan K
         </h1>
