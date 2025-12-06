@@ -9,7 +9,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function CertificationsSection() {
   return (
-    <section id="certifications" className="py-16 md:py-24">
+    <section id="certifications" className="py-16 md:py-24 bg-pink-100/50 backdrop-blur-2xl">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-foreground">
