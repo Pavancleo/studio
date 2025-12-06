@@ -16,7 +16,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-white/20 bg-background/50 backdrop-blur-xl">
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
@@ -56,7 +56,7 @@ export default function Header() {
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right">
+              <SheetContent side="right" className="bg-background/80 backdrop-blur-xl">
                 <Link href="/" className="mb-8 flex items-center space-x-2">
                   <Waves className="h-6 w-6 text-primary" />
                   <span className="font-bold font-headline">Liquidfolio</span>
