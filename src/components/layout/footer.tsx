@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Waves } from "lucide-react";
 import { contactInfo } from "@/lib/data";
-import { Button } from "@/components/ui/button";
 import AnimatedBackground from "@/components/effects/animated-background";
 
 export default function Footer() {
@@ -22,12 +21,16 @@ export default function Footer() {
               </a>
               <div className="flex space-x-2">
                 {contactInfo.socials.map((social) => (
-                  <Button key={social.name} variant="ghost" size="icon" asChild>
-                    <Link href={social.url} target="_blank" rel="noopener noreferrer">
-                      <social.Icon className="h-5 w-5" />
-                      <span className="sr-only">{social.name}</span>
-                    </Link>
-                  </Button>
+                  <Link
+                    key={social.name}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-transparent bg-background/30 p-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:border-white/20 hover:bg-background/50 hover:text-foreground hover:shadow-[0_0_15px_2px_hsl(var(--chart-3)/70%)]"
+                  >
+                    <social.Icon className="h-5 w-5" />
+                    <span className="sr-only">{social.name}</span>
+                  </Link>
                 ))}
               </div>
             </div>
