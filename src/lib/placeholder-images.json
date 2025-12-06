@@ -29,6 +29,12 @@
       "description": "Placeholder for fourth project",
       "imageUrl": "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc2NDk2ODM0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data analytics"
+    },
+    {
+      "id": "skills-background",
+      "description": "A textured blue background for the skills section.",
+      "imageUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3a803a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "blue texture"
     }
   ]
 }

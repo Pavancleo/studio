@@ -1,10 +1,25 @@
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { skills } from "@/lib/data";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+
 
 export default function SkillsSection() {
+  const skillsBg = PlaceHolderImages.find(p => p.id === "skills-background");
+
   return (
     <section id="skills" className="relative py-16 md:py-24 bg-secondary">
+       {skillsBg && (
+        <Image
+          src={skillsBg.imageUrl}
+          alt={skillsBg.description}
+          fill
+          className="object-cover"
+          data-ai-hint={skillsBg.imageHint}
+        />
+      )}
+      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
