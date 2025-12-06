@@ -222,14 +222,12 @@ export default function ProjectsSection() {
                     {index === 0 ? (
                       <CodeDialog projectTitle={project.title} />
                     ) : (
-                      <Link
-                        href={project.repoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-background/50 px-4 py-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:bg-background/70 hover:text-foreground hover:shadow-[0_0_15px_2px_hsl(var(--sidebar-primary)/70%)]"
+                      <Button
+                        disabled
+                        className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-background/50 px-4 py-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all"
                       >
                         <Github className="h-4 w-4" /> Code
-                      </Link>
+                      </Button>
                     )}
                   </div>
                 </CardFooter>
