@@ -24,7 +24,7 @@ export default function ProjectsSection() {
             return (
               <Card 
                 key={project.title} 
-                className="overflow-hidden bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/20 hover:border-primary hover:shadow-[0_0_15px_2px_hsl(var(--primary)/50%)] hover:-translate-y-1"
+                className="overflow-hidden bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/20 hover:border-pink-500 hover:shadow-[0_0_15px_2px_rgb(236_72_153_/_50%)] hover:-translate-y-1"
               >
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
