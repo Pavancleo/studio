@@ -15,7 +15,10 @@ export default function CertificationsSection() {
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {certifications.map((cert) => (
-            <Card key={cert.name} className="flex items-start p-6 transition-all duration-300 hover:bg-accent hover:shadow-lg">
+            <Card 
+              key={cert.name} 
+              className="flex items-start p-6 bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/20 hover:border-primary hover:shadow-[0_0_15px_2px_hsl(var(--primary)/50%)] hover:-translate-y-1"
+            >
               <cert.Icon className="h-8 w-8 text-primary mr-4 mt-1 flex-shrink-0" />
               <div>
                 <CardHeader className="p-0">
