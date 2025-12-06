@@ -149,7 +149,7 @@ function CodeDialog({ projectTitle }: { projectTitle: string }) {
           <Github className="h-4 w-4" /> Code
         </Link>
       </DialogTrigger>
-      <DialogContent className="max-w-4xl bg-slate-900/80 backdrop-blur-2xl border-slate-700 text-slate-200">
+      <DialogContent className="max-w-4xl bg-purple-950/80 backdrop-blur-2xl border-purple-500/50 text-slate-200 shadow-[0_0_35px_8px_hsl(var(--primary)/40%)]">
         <DialogHeader>
           <DialogTitle>{projectTitle} - Source Code</DialogTitle>
         </DialogHeader>
