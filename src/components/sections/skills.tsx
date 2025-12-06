@@ -22,7 +22,7 @@ export default function SkillsSection() {
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+          <h2 className="glitch text-3xl font-extrabold tracking-tight sm:text-4xl" data-text="Technical Proficiency">
             Technical Proficiency
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
