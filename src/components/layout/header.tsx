@@ -30,7 +30,7 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="rounded-full border border-transparent bg-background/30 px-3 py-1.5 text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:border-white/20 hover:bg-background/50 hover:text-foreground hover:shadow-lg"
+                className="rounded-full border border-transparent bg-background/30 px-3 py-1.5 text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:border-white/20 hover:bg-background/50 hover:text-foreground hover:shadow-[0_0_15px_2px_hsl(var(--primary)/70%)]"
               >
                 {link.name}
               </Link>
