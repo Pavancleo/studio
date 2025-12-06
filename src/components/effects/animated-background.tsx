@@ -103,13 +103,13 @@ export default function AnimatedBackground() {
           width: 25px;
           height: 25px;
           animation-delay: 15s;
-          animation-duration: 45S;
+          animation-duration: 45s;
         }
         .circles li:nth-child(9) {
           left: 20%;
           width: 15px;
           height: 15px;
-          animation-day: 2s;
+          animation-delay: 2s;
           animation-duration: 35s;
         }
         .circles li:nth-child(10) {
@@ -118,6 +118,18 @@ export default function AnimatedBackground() {
           height: 150px;
           animation-delay: 0s;
           animation-duration: 11s;
+        }
+        @keyframes animate {
+          0%{
+              transform: translateY(0) rotate(0deg);
+              opacity: 1;
+              border-radius: 0;
+          }
+          100%{
+              transform: translateY(-1000px) rotate(720deg);
+              opacity: 0;
+              border-radius: 50%;
+          }
         }
       `}</style>
     </div>
