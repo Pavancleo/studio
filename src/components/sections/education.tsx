@@ -6,7 +6,7 @@ export default function EducationSection() {
     <section id="education" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-shake">
             Education
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
