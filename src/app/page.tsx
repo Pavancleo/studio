@@ -28,9 +28,7 @@ export default function Home() {
         <main className="flex-1">
           <HeroSection />
           <SkillsSection />
-          <div className="bg-background/30 backdrop-blur-2xl">
-            <ProjectsSection />
-          </div>
+          <ProjectsSection />
           <EducationSection />
           <CertificationsSection />
         </main>
