@@ -32,13 +32,13 @@ export const projects = [
     repoUrl: '#',
   },
   {
-    title: 'Creative Design Agency Site',
-    description: 'A visually-driven website for a design agency, showcasing their work with interactive animations.',
+    title: 'Coming soon...',
+    description: 'Another exciting project is in the works. Stay tuned for more details!',
     repoUrl: '#',
   },
   {
-    title: 'Data Visualization Dashboard',
-    description: 'A dashboard for visualizing complex datasets, built with D3.js and React for a seamless user experience.',
+    title: 'Coming soon...',
+    description: 'Another exciting project is in the works. Stay tuned for more details!',
     repoUrl: '#',
   },
 ];
