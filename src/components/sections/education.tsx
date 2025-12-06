@@ -11,10 +11,10 @@ export default function EducationSection() {
     <section 
       id="education" 
       ref={ref}
-      className={`relative overflow-hidden py-16 md:py-24 border-t border-b border-black/10 transition-all duration-1000 ${inView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+      className={`relative overflow-hidden border-t border-b border-black/10 transition-all duration-1000 ${inView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
     >
       <AnimatedBackground />
-      <div className="relative z-10 bg-blue-100/50 backdrop-blur-sm">
+      <div className="relative z-10 bg-blue-100/50 backdrop-blur-sm py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-shake">
