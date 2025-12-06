@@ -22,7 +22,10 @@ export default function ProjectsSection() {
           {projects.map((project) => {
             const projectImage = PlaceHolderImages.find(p => p.id === project.imageId);
             return (
-              <Card key={project.title} className="overflow-hidden transition-shadow duration-300 hover:shadow-2xl">
+              <Card 
+                key={project.title} 
+                className="overflow-hidden bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/20 hover:border-primary hover:shadow-[0_0_15px_2px_hsl(var(--primary)/50%)] hover:-translate-y-1"
+              >
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
                 </CardHeader>
@@ -41,7 +44,7 @@ export default function ProjectsSection() {
                   )}
                   <p className="p-6 text-muted-foreground">{project.description}</p>
                 </CardContent>
-                <CardFooter className="bg-muted/50">
+                <CardFooter className="bg-transparent">
                   <div className="flex w-full justify-end space-x-2">
                     <Button variant="ghost" asChild>
                       <Link href={project.repoUrl}>
