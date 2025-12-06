@@ -142,12 +142,11 @@ function CodeDialog({ projectTitle }: { projectTitle: string }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Link
-          href="#"
+        <Button
           className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-background/50 px-4 py-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:bg-background/70 hover:text-foreground hover:shadow-[0_0_15px_2px_hsl(var(--chart-3)/70%)]"
         >
           <Github className="h-4 w-4" /> Code
-        </Link>
+        </Button>
       </DialogTrigger>
       <DialogContent className="max-w-4xl bg-purple-950/80 backdrop-blur-2xl border-purple-500/50 text-slate-200 shadow-[0_0_35px_8px_hsl(var(--primary)/40%)]">
         <DialogHeader>
@@ -223,7 +222,7 @@ export default function ProjectsSection() {
                       <CodeDialog projectTitle={project.title} />
                     ) : (
                       <Button
-                        className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-background/50 px-4 py-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all"
+                        className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-background/50 px-4 py-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:bg-background/70 hover:text-foreground hover:shadow-[0_0_15px_2px_hsl(var(--chart-3)/70%)]"
                       >
                         <Github className="h-4 w-4" /> Code
                       </Button>
