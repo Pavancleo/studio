@@ -26,7 +26,7 @@ export default function Footer() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-full border border-transparent bg-background/30 p-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:border-white/20 hover:bg-background/50 hover:text-foreground hover:shadow-[0_0_15px_2px_hsl(var(--chart-3)/70%)]"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-background/50 p-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:bg-background/70 hover:text-foreground hover:shadow-[0_0_15px_2px_hsl(var(--chart-3)/70%)]"
                   >
                     <social.Icon className="h-5 w-5" />
                     <span className="sr-only">{social.name}</span>
