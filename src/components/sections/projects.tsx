@@ -153,17 +153,17 @@ function CodeDialog({ projectTitle }: { projectTitle: string }) {
         <DialogHeader>
           <DialogTitle>{projectTitle} - Source Code</DialogTitle>
         </DialogHeader>
-        <div className="relative">
+        <div className="relative overflow-hidden rounded-lg border border-slate-800">
           <Button
             size="icon"
             variant="ghost"
             onClick={handleCopy}
-            className="absolute top-2 right-2 h-8 w-8 text-slate-400 hover:bg-slate-700 hover:text-white"
+            className="absolute top-2 right-2 h-8 w-8 text-slate-400 hover:bg-slate-700 hover:text-white z-10"
           >
             {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
             <span className="sr-only">Copy code</span>
           </Button>
-          <div className="max-h-[60vh] overflow-auto rounded-lg bg-black/50 p-4 border border-slate-800">
+          <div className="max-h-[60vh] overflow-auto bg-black/50 p-4">
             <pre className="text-sm">
               <code className="font-code">{codeSnippet}</code>
             </pre>
