@@ -65,7 +65,7 @@ export const education = [
   {
     degree: 'Middle School',
     institution: 'D.A.V Mat Hig Sec School',
-    years: '2009 - 2022',
+    years: '2010 - 2022',
     Icon: GraduationCap,
   },
 ];
