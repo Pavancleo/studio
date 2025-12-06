@@ -98,7 +98,7 @@ export const contactInfo = {
   email: 'pavan2006007@gmail.com',
   socials: [
     { name: 'GitHub', url: 'https://github.com/Pavancleo', Icon: Github },
-    { name: 'LinkedIn', url: '#', Icon: Linkedin },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/pavan-k-4bb2ba308/', Icon: Linkedin },
   ],
 };
 
