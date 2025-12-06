@@ -55,7 +55,7 @@ export default function ProjectsSection() {
                   <div className="flex w-full justify-end space-x-2">
                     <Link
                       href={project.repoUrl}
-                      className="inline-flex items-center gap-2 rounded-full border border-transparent bg-background/30 px-4 py-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:border-white/20 hover:bg-background/50 hover:text-foreground hover:shadow-[0_0_15px_2px_hsl(var(--chart-3)/70%)]"
+                      className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-background/50 px-4 py-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:bg-background/70 hover:text-foreground hover:shadow-[0_0_15px_2px_hsl(var(--chart-3)/70%)]"
                     >
                       <Github className="h-4 w-4" /> Code
                     </Link>

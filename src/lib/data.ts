@@ -21,31 +21,27 @@ export const skills: { name: string; level: number; Icon: LucideIcon }[] = [
 
 export const projects = [
   {
-    title: 'AI-Powered Portfolio Analyzer',
-    description: 'A web app that uses machine learning to analyze investment portfolios and provide risk assessment.',
+    title: 'AI-ChatBot',
+    description: 'A conversational AI chatbot built with modern NLP techniques to assist users.',
     imageId: 'project-1',
-    liveUrl: '#',
     repoUrl: '#',
   },
   {
     title: 'E-Commerce Platform',
     description: 'A full-stack e-commerce solution with features like product management, user authentication, and a payment gateway.',
     imageId: 'project-2',
-    liveUrl: '#',
     repoUrl: '#',
   },
   {
     title: 'Creative Design Agency Site',
     description: 'A visually-driven website for a design agency, showcasing their work with interactive animations.',
     imageId: 'project-3',
-    liveUrl: '#',
     repoUrl: '#',
   },
   {
     title: 'Data Visualization Dashboard',
     description: 'A dashboard for visualizing complex datasets, built with D3.js and React for a seamless user experience.',
     imageId: 'project-4',
-    liveUrl: '#',
     repoUrl: '#',
   },
 ];
