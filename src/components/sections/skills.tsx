@@ -4,7 +4,7 @@ import { skills } from "@/lib/data";
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="relative py-16 md:py-24 bg-sky-100/50 backdrop-blur-2xl">
+    <section id="skills" className="relative py-16 md:py-24 bg-blue-100/50 backdrop-blur-2xl">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <h2 className="glitch text-3xl font-extrabold tracking-tight sm:text-4xl" data-text="Technical Proficiency">
