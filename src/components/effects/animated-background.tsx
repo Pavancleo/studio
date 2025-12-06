@@ -27,6 +27,16 @@ export default function AnimatedBackground() {
           <li></li>
           <li></li>
           <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
       <style jsx>{`
@@ -118,6 +128,71 @@ export default function AnimatedBackground() {
           height: 150px;
           animation-delay: 0s;
           animation-duration: 11s;
+        }
+        .circles li:nth-child(11) {
+          left: 5%;
+          width: 40px;
+          height: 40px;
+          animation-delay: 5s;
+          animation-duration: 20s;
+        }
+        .circles li:nth-child(12) {
+          left: 15%;
+          width: 70px;
+          height: 70px;
+          animation-delay: 8s;
+        }
+        .circles li:nth-child(13) {
+          left: 45%;
+          width: 30px;
+          height: 30px;
+          animation-delay: 6s;
+          animation-duration: 30s;
+        }
+        .circles li:nth-child(14) {
+          left: 55%;
+          width: 90px;
+          height: 90px;
+          animation-delay: 10s;
+        }
+        .circles li:nth-child(15) {
+          left: 80%;
+          width: 25px;
+          height: 25px;
+          animation-delay: 12s;
+          animation-duration: 22s;
+        }
+        .circles li:nth-child(16) {
+          left: 60%;
+          width: 120px;
+          height: 120px;
+          animation-delay: 9s;
+        }
+        .circles li:nth-child(17) {
+          left: 30%;
+          width: 50px;
+          height: 50px;
+          animation-delay: 1s;
+          animation-duration: 28s;
+        }
+        .circles li:nth-child(18) {
+          left: 90%;
+          width: 20px;
+          height: 20px;
+          animation-delay: 14s;
+        }
+        .circles li:nth-child(19) {
+          left: 2%;
+          width: 100px;
+          height: 100px;
+          animation-delay: 6s;
+          animation-duration: 15s;
+        }
+        .circles li:nth-child(20) {
+          left: 95%;
+          width: 35px;
+          height: 35px;
+          animation-delay: 3s;
         }
         @keyframes animate {
           0%{
