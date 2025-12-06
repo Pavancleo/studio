@@ -204,8 +204,8 @@ export default function ProjectsSection() {
                   <CardTitle className="text-foreground">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="p-0">
-                  {projectImage && (
-                    <div className="aspect-video relative">
+                  <div className="aspect-video relative">
+                    {projectImage ? (
                       <Image
                         src={projectImage.imageUrl}
                         alt={project.title}
@@ -216,8 +216,10 @@ export default function ProjectsSection() {
                         )}
                         data-ai-hint={projectImage.imageHint}
                       />
-                    </div>
-                  )}
+                    ) : (
+                      <div className="w-full h-full bg-background/20"></div>
+                    )}
+                  </div>
                   <p className="p-6 text-muted-foreground">{project.description}</p>
                 </CardContent>
                 <CardFooter className="bg-transparent">
