@@ -1,3 +1,5 @@
+"use client";
+import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -5,10 +7,16 @@ import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 import { projects } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { useInView } from "@/hooks/use-in-view";
 
 export default function ProjectsSection() {
+  const { ref, inView } = useInView<HTMLElement>();
   return (
-    <section id="projects" className="py-16 md:py-24 bg-pink-100/50 backdrop-blur-2xl border-t border-b border-black/10">
+    <section 
+      id="projects" 
+      ref={ref}
+      className={`py-16 md:py-24 bg-pink-100/50 backdrop-blur-2xl border-t border-b border-black/10 transition-all duration-1000 ${inView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-foreground">

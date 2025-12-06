@@ -1,10 +1,18 @@
+"use client";
+import * as React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { skills } from "@/lib/data";
+import { useInView } from "@/hooks/use-in-view";
 
 export default function SkillsSection() {
+  const { ref, inView } = useInView<HTMLElement>();
   return (
-    <section id="skills" className="relative py-16 md:py-24 bg-blue-100/50 backdrop-blur-2xl">
+    <section 
+      id="skills" 
+      ref={ref}
+      className={`relative py-16 md:py-24 bg-blue-100/50 backdrop-blur-2xl transition-all duration-1000 ${inView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
