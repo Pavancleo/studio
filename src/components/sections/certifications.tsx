@@ -39,7 +39,7 @@ export default function CertificationsSection() {
                   </Card>
                 </DialogTrigger>
                 {certImage && (
-                   <DialogContent className="max-w-3xl bg-background/80 backdrop-blur-xl border border-white/20 rounded-xl shadow-lg">
+                   <DialogContent className="max-w-3xl bg-background/60 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg">
                     <DialogHeader>
                       <DialogTitle>{cert.name}</DialogTitle>
                     </DialogHeader>
