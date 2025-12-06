@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Abstract liquid art background",
+      "imageUrl": "https://images.unsplash.com/photo-1681548142584-a8fb9f66b160?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGxpcXVpZHxlbnwwfHx8fDE3NjUwMDgwMjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract liquid"
+    },
+    {
+      "id": "project-1",
+      "description": "Placeholder for first project",
+      "imageUrl": "https://images.unsplash.com/photo-1584949091882-158ebf933cda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwY29kZXxlbnwwfHx8fDE3NjQ5NjY3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "technology code"
+    },
+    {
+      "id": "project-2",
+      "description": "Placeholder for second project",
+      "imageUrl": "https://images.unsplash.com/photo-1603202662747-00e33e7d1468?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzY0OTc5MDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business meeting"
+    },
+    {
+      "id": "project-3",
+      "description": "Placeholder for third project",
+      "imageUrl": "https://images.unsplash.com/photo-1557243962-0a093922933f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjcmVhdGl2ZSUyMGRlc2lnbnxlbnwwfHx8fDE3NjQ5MDg2NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "creative design"
+    },
+    {
+      "id": "project-4",
+      "description": "Placeholder for fourth project",
+      "imageUrl": "https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc2NDk2ODM0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data analytics"
+    }
+  ]
 }
