@@ -163,7 +163,7 @@ function CodeDialog({ projectTitle }: { projectTitle: string }) {
             {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
             <span className="sr-only">Copy code</span>
           </Button>
-          <div className="max-h-[60vh] overflow-auto bg-black/50 p-4">
+          <div className="max-h-[60vh] overflow-auto bg-black/50 p-4 code-scrollbar">
             <pre className="text-sm">
               <code className="font-code">{codeSnippet}</code>
             </pre>
