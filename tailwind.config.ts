@@ -92,11 +92,22 @@ export default {
           '0%, 100%': { boxShadow: '0 0 10px hsl(var(--primary))' },
           '50%': { boxShadow: '0 0 25px 3px hsl(var(--primary))' },
         },
+        'neon-glow': {
+          '0%, 100%': {
+            textShadow:
+              '0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff',
+          },
+          '50%': {
+            textShadow:
+              '0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 50px #f0f, 0 0 90px #f0f, 0 0 100px #f0f, 0 0 120px #f0f, 0 0 180px #f0f',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         glow: 'glow 2.5s ease-in-out infinite',
+        'neon-glow': 'neon-glow 4s ease-in-out infinite',
       },
     },
   },
