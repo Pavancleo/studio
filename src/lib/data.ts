@@ -86,9 +86,9 @@ export const certifications = [
     imageId: 'cert-2',
   },
   {
-    name: 'AWS Certified Solutions Architect – Associate',
-    issuer: 'Amazon Web Services',
-    date: 'Issued Mar 2022',
+    name: 'Git it Right: Commit with Confidence',
+    issuer: 'Codesapiens',
+    date: 'Issued Jul 2024',
     Icon: Award,
     imageId: 'cert-3',
   },
@@ -97,8 +97,8 @@ export const certifications = [
 export const contactInfo = {
   email: 'pavan2006007@gmail.com',
   socials: [
-    { name: 'GitHub', url: '#', Icon: Github },
-    { name: 'LinkedIn', url: '#', Icon: Linkedin },
+    { name: 'GitHub', url: 'https://github.com/Pavancleo', Icon: Github },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/pavan-k-4bb2ba308/', Icon: Linkedin },
   ],
 };
 
