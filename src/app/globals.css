@@ -151,15 +151,14 @@
     width: 8px;
   }
   .code-scrollbar::-webkit-scrollbar-track {
-    background: rgba(100, 20, 180, 0.2);
-    border-radius: 10px;
+    background: transparent;
   }
   .code-scrollbar::-webkit-scrollbar-thumb {
-    background: rgba(120, 40, 200, 0.8);
+    background: rgba(120, 40, 200, 0.5);
     border-radius: 10px;
   }
   .code-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: rgba(140, 60, 220, 1);
+    background: rgba(140, 60, 220, 0.8);
   }
 }
 
