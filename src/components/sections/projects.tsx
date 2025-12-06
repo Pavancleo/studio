@@ -42,8 +42,7 @@ export default function ProjectsSection() {
                       <Image
                         src={projectImage.imageUrl}
                         alt={project.title}
-                        width={600}
-                        height={400}
+                        fill
                         className="object-cover w-full h-full"
                         data-ai-hint={projectImage.imageHint}
                       />
