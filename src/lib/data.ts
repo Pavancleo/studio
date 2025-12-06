@@ -97,7 +97,7 @@ export const certifications = [
 export const contactInfo = {
   email: 'pavan2006007@gmail.com',
   socials: [
-    { name: 'GitHub', url: 'https://github.com/Pavancleo?tab=repositories', Icon: Github },
+    { name: 'GitHub', url: 'https://github.com/Pavancleo', Icon: Github },
     { name: 'LinkedIn', url: '#', Icon: Linkedin },
   ],
 };
