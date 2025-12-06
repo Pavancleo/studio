@@ -9,6 +9,11 @@ import { navigationLinks } from "@/lib/data";
 
 export default function Header() {
   const [open, setOpen] = React.useState(false);
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -39,36 +44,38 @@ export default function Header() {
               <span className="sr-only">Admin Login</span>
             </Link>
           </Button>
-          <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="md:hidden"
-                aria-label="Open menu"
-              >
-                <Menu className="h-5 w-5" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <Link href="/" className="mb-8 flex items-center space-x-2">
-                 <Waves className="h-6 w-6 text-primary" />
-                <span className="font-bold font-headline">Liquidfolio</span>
-              </Link>
-              <div className="flex flex-col space-y-4">
-                {navigationLinks.map((link) => (
-                  <Link
-                    key={link.name}
-                    href={link.href}
-                    onClick={() => setOpen(false)}
-                    className="text-foreground/80 transition-colors hover:text-primary"
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
+          {isClient && (
+            <Sheet open={open} onOpenChange={setOpen}>
+              <SheetTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="md:hidden"
+                  aria-label="Open menu"
+                >
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <Link href="/" className="mb-8 flex items-center space-x-2">
+                  <Waves className="h-6 w-6 text-primary" />
+                  <span className="font-bold font-headline">Liquidfolio</span>
+                </Link>
+                <div className="flex flex-col space-y-4">
+                  {navigationLinks.map((link) => (
+                    <Link
+                      key={link.name}
+                      href={link.href}
+                      onClick={() => setOpen(false)}
+                      className="text-foreground/80 transition-colors hover:text-primary"
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
+          )}
         </div>
       </div>
     </header>
