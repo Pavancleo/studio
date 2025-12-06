@@ -25,12 +25,12 @@ export default function Header() {
               P | Portfolio
             </span>
           </Link>
-          <nav className="hidden gap-6 text-sm md:flex">
+          <nav className="hidden gap-4 text-sm md:flex">
             {navigationLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-foreground/60 transition-colors hover:text-foreground/80"
+                className="rounded-lg border border-transparent bg-background/30 px-3 py-1.5 text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:border-white/20 hover:bg-background/50 hover:text-foreground hover:shadow-lg"
               >
                 {link.name}
               </Link>
