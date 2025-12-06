@@ -3,8 +3,7 @@ import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { Github } from "lucide-react";
 import { projects } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { useInView } from "@/hooks/use-in-view";
@@ -54,11 +53,12 @@ export default function ProjectsSection() {
                 </CardContent>
                 <CardFooter className="bg-transparent">
                   <div className="flex w-full justify-end space-x-2">
-                    <Button variant="ghost" asChild>
-                      <Link href={project.repoUrl}>
-                        <Github className="mr-2 h-4 w-4" /> Code
-                      </Link>
-                    </Button>
+                    <Link
+                      href={project.repoUrl}
+                      className="inline-flex items-center gap-2 rounded-full border border-transparent bg-background/30 px-4 py-2 text-sm font-medium text-foreground/80 shadow-sm backdrop-blur-xl transition-all hover:border-white/20 hover:bg-background/50 hover:text-foreground hover:shadow-[0_0_15px_2px_hsl(var(--chart-3)/70%)]"
+                    >
+                      <Github className="h-4 w-4" /> Code
+                    </Link>
                   </div>
                 </CardFooter>
               </Card>
