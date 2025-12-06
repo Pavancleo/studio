@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import AnimatedBackground from "@/components/effects/animated-background";
 
 export default function HeroSection() {
   return (
     <section id="hero" className="relative h-[calc(100vh-3.5rem)] w-full">
+      <AnimatedBackground />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-foreground">
           Pavan K

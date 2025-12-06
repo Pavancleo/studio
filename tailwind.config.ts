@@ -109,6 +109,18 @@ export default {
           '75%': { transform: 'translate(1px, 1px) rotate(0.5deg)' },
           '100%': { transform: 'translate(-1px, -1px) rotate(-0.5deg)' },
         },
+        animate: {
+          '0%': {
+            transform: 'translateY(0) rotate(0deg)',
+            opacity: '1',
+            borderRadius: '0',
+          },
+          '100%': {
+            transform: 'translateY(-1000px) rotate(720deg)',
+            opacity: '0',
+            borderRadius: '50%',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -116,6 +128,7 @@ export default {
         glow: 'glow 2.5s ease-in-out infinite',
         'neon-glow': 'neon-glow 4s ease-in-out infinite',
         'text-shake': 'text-shake 0.5s linear infinite',
+        animate: 'animate 25s linear infinite',
       },
     },
   },
