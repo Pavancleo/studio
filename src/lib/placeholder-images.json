@@ -1,12 +1,6 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-background",
-      "description": "Abstract black sand waves.",
-      "imageUrl": "https://images.unsplash.com/photo-1548680210-9b455902b8a4?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "imageHint": "black sand"
-    },
-    {
       "id": "project-1",
       "description": "Placeholder for first project",
       "imageUrl": "https://images.unsplash.com/photo-1584949091882-158ebf933cda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0ZWNobm9sb2d5JTIwY29kZXxlbnwwfHx8fDE3NjQ5NjY3NDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -45,13 +39,13 @@
     {
       "id": "cert-2",
       "description": "Placeholder for second certificate",
-      "imageUrl": "https://images.unsplash.com/photo-1641748182997-f9745e9a0348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjZXJ0aWZpY2F0ZSUyMGRvY3VtZW50fGVufDB8fHx8MTc2NDk5MzUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1641748182997-f9745e9a0348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjZXJ0aWZpY2F0ZSUyMGRvY3VtZW50fGVufDB8fHx8MTc2NDk5MzUwNnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "certificate document"
     },
     {
       "id": "cert-3",
       "description": "Placeholder for third certificate",
-      "imageUrl": "https://images.unsplash.com/photo-1622768761362-d8f1bff37f36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjZXJ0aWZpY2F0ZSUyMGRvY3VtZW50fGVufDB8fHx8MTc2NDk5MzUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1622768761362-d8f1bff37f36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjZXJ0aWZpY2F0ZSUyMGRvY3VtZW50fGVufDB8fHx8MTc2NDk5MzUwNnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "certificate document"
     }
   ]
