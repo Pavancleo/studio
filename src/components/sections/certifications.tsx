@@ -26,7 +26,7 @@ export default function CertificationsSection() {
               <Dialog key={cert.name}>
                 <DialogTrigger asChild>
                   <Card 
-                    className="flex items-start p-6 bg-background/30 rounded-xl shadow-md transition-all duration-300 cursor-pointer backdrop-blur-2xl border border-black/10 hover:border-primary hover:bg-background/50 hover:shadow-[0_0_25px_5px_hsl(var(--primary)/20%)] hover:-translate-y-1"
+                    className="flex items-start p-6 bg-background/30 rounded-xl shadow-md transition-all duration-300 cursor-pointer backdrop-blur-2xl border border-black/10 hover:border-primary hover:bg-background/50 hover:shadow-[0_0_35px_8px_hsl(var(--primary)/40%)] hover:-translate-y-1"
                   >
                     <cert.Icon className="h-8 w-8 text-primary mr-4 mt-1 flex-shrink-0" />
                     <div>
