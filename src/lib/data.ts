@@ -51,9 +51,9 @@ export const projects = [
 
 export const education = [
   {
-    degree: 'M.S. in Computer Science',
-    institution: 'Georgia Institute of Technology',
-    years: '2020 - 2022',
+    degree: 'computer science and business systems',
+    institution: 'Panimalar engineering college',
+    years: '2024-2028',
     Icon: GraduationCap,
   },
   {
