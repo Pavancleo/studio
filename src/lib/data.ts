@@ -95,7 +95,7 @@ export const certifications = [
 ];
 
 export const contactInfo = {
-  email: 'hello@liquidfolio.dev',
+  email: 'pavan2006007@gmail.com',
   socials: [
     { name: 'GitHub', url: '#', Icon: Github },
     { name: 'LinkedIn', url: '#', Icon: Linkedin },
