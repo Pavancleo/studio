@@ -76,18 +76,21 @@ export const certifications = [
     issuer: 'Google Cloud',
     date: 'Issued Jun 2023',
     Icon: Award,
+    imageId: 'cert-1',
   },
   {
     name: 'Certified Kubernetes Administrator (CKA)',
     issuer: 'The Linux Foundation',
     date: 'Issued Dec 2022',
     Icon: Award,
+    imageId: 'cert-2',
   },
   {
     name: 'AWS Certified Solutions Architect – Associate',
     issuer: 'Amazon Web Services',
     date: 'Issued Mar 2022',
     Icon: Award,
+    imageId: 'cert-3',
   },
 ];
 
