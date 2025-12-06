@@ -29,19 +29,16 @@ export const projects = [
   {
     title: 'In Development',
     description: 'A full-stack e-commerce solution with features like product management, user authentication, and a payment gateway.',
-    imageId: 'project-2',
     repoUrl: '#',
   },
   {
     title: 'Creative Design Agency Site',
     description: 'A visually-driven website for a design agency, showcasing their work with interactive animations.',
-    imageId: 'project-3',
     repoUrl: '#',
   },
   {
     title: 'Data Visualization Dashboard',
     description: 'A dashboard for visualizing complex datasets, built with D3.js and React for a seamless user experience.',
-    imageId: 'project-4',
     repoUrl: '#',
   },
 ];

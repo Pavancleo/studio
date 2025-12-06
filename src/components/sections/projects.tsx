@@ -194,7 +194,7 @@ export default function ProjectsSection() {
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
           {projects.map((project, index) => {
-            const projectImage = PlaceHolderImages.find(p => p.id === project.imageId);
+            const projectImage = project.imageId ? PlaceHolderImages.find(p => p.id === project.imageId) : undefined;
             return (
               <Card 
                 key={project.title} 
@@ -212,7 +212,7 @@ export default function ProjectsSection() {
                         fill
                         className={cn(
                           "object-cover w-full h-full",
-                          index === 1 && "blur-sm"
+                          project.title === 'In Development' && "blur-sm"
                         )}
                         data-ai-hint={projectImage.imageHint}
                       />
