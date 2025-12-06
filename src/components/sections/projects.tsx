@@ -11,10 +11,10 @@ export default function ProjectsSection() {
     <section id="projects" className="py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-white">
+          <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-foreground">
             Featured Projects
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-slate-300">
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
             Here are some of the projects I'm proud to have worked on.
           </p>
         </div>
@@ -24,10 +24,10 @@ export default function ProjectsSection() {
             return (
               <Card 
                 key={project.title} 
-                className="overflow-hidden bg-white/10 backdrop-blur-2xl border border-white/20 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/20 hover:border-pink-500 hover:shadow-[0_0_25px_5px_rgb(236_72_153_/_20%)] hover:-translate-y-1"
+                className="overflow-hidden bg-white/30 backdrop-blur-2xl border border-black/10 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/50 hover:border-pink-500 hover:shadow-[0_0_25px_5px_rgb(236_72_153_/_20%)] hover:-translate-y-1"
               >
                 <CardHeader>
-                  <CardTitle className="text-white">{project.title}</CardTitle>
+                  <CardTitle className="text-foreground">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="p-0">
                   {projectImage && (
@@ -42,7 +42,7 @@ export default function ProjectsSection() {
                       />
                     </div>
                   )}
-                  <p className="p-6 text-slate-300">{project.description}</p>
+                  <p className="p-6 text-muted-foreground">{project.description}</p>
                 </CardContent>
                 <CardFooter className="bg-transparent">
                   <div className="flex w-full justify-end space-x-2">

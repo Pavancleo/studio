@@ -31,6 +31,12 @@
       "imageHint": "blue texture"
     },
     {
+      "id": "skills-background-light",
+      "description": "A light textured background for the skills section.",
+      "imageUrl": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "light texture"
+    },
+    {
       "id": "cert-1",
       "description": "Placeholder for first certificate",
       "imageUrl": "/images/pavan1.jpg",

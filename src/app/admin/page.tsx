@@ -22,38 +22,38 @@ export default function AdminDashboard() {
       <div className="flex items-center">
         <h1 className="text-lg font-semibold md:text-2xl">Contacts</h1>
       </div>
-      <div className="flex flex-1 items-center justify-center rounded-lg border border-dashed border-white/20 shadow-sm p-4 bg-black/30 backdrop-blur-2xl">
-        <Card className="w-full bg-transparent border-white/20 text-white">
+      <div className="flex flex-1 items-center justify-center rounded-lg border border-dashed border-black/20 shadow-sm p-4 bg-white/30 backdrop-blur-2xl">
+        <Card className="w-full bg-transparent border-black/20 text-foreground">
           <CardHeader>
             <CardTitle>Contact Messages</CardTitle>
-            <CardDescription className="text-slate-300">
+            <CardDescription className="text-muted-foreground">
               Manage messages from your portfolio visitors.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <Table>
               <TableHeader>
-                <TableRow className="border-white/20">
-                  <TableHead className="text-white">Customer</TableHead>
-                  <TableHead className="hidden md:table-cell text-white">
+                <TableRow className="border-black/20">
+                  <TableHead className="text-foreground">Customer</TableHead>
+                  <TableHead className="hidden md:table-cell text-foreground">
                     Message
                   </TableHead>
-                  <TableHead className="hidden md:table-cell text-white">
+                  <TableHead className="hidden md:table-cell text-foreground">
                     Status
                   </TableHead>
-                  <TableHead className="text-right text-white">Received</TableHead>
+                  <TableHead className="text-right text-foreground">Received</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {contacts.map(contact => (
-                  <TableRow key={contact.id} className="border-white/20">
+                  <TableRow key={contact.id} className="border-black/20">
                     <TableCell>
                       <div className="font-medium">{contact.name}</div>
-                      <div className="hidden text-sm text-slate-300 md:inline">
+                      <div className="hidden text-sm text-muted-foreground md:inline">
                         {contact.email}
                       </div>
                     </TableCell>
-                    <TableCell className="hidden md:table-cell truncate max-w-xs text-slate-300">
+                    <TableCell className="hidden md:table-cell truncate max-w-xs text-muted-foreground">
                       {contact.message}
                     </TableCell>
                      <TableCell className="hidden md:table-cell">
@@ -61,7 +61,7 @@ export default function AdminDashboard() {
                         New
                       </Badge>
                     </TableCell>
-                    <TableCell className="text-right text-slate-300">{contact.received}</TableCell>
+                    <TableCell className="text-right text-muted-foreground">{contact.received}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
