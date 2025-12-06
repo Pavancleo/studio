@@ -2,10 +2,23 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import AnimatedBackground from "@/components/effects/animated-background";
+import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function HeroSection() {
+  const bgImage = PlaceHolderImages.find(p => p.id === 'skills-background-light');
   return (
     <section id="hero" className="relative h-[calc(100vh-3.5rem)] w-full">
+      {bgImage && (
+        <Image
+          src={bgImage.imageUrl}
+          alt={bgImage.description}
+          fill
+          className="object-cover opacity-20"
+          data-ai-hint={bgImage.imageHint}
+        />
+      )}
+      <div className="absolute inset-0 bg-background/60 z-0"></div>
       <AnimatedBackground />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-foreground">

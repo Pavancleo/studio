@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="relative border-t border-black/10 overflow-hidden">
       <AnimatedBackground />
-      <div className="relative z-10 bg-background/30 backdrop-blur-sm">
+      <div className="relative z-10 bg-background/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
             <div className="flex items-center space-x-2">
