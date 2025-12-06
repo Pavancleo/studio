@@ -59,11 +59,6 @@ export default function ProjectsSection() {
                         <Github className="mr-2 h-4 w-4" /> Code
                       </Link>
                     </Button>
-                    <Button asChild>
-                      <Link href={project.liveUrl}>
-                        <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-                      </Link>
-                    </Button>
                   </div>
                 </CardFooter>
               </Card>
