@@ -16,9 +16,12 @@ export default function SkillsSection() {
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill) => (
-            <Card key={skill.name} className="flex flex-col transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <Card 
+              key={skill.name} 
+              className="flex flex-col bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/20 hover:shadow-2xl hover:-translate-y-1"
+            >
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle className="text-base font-medium">{skill.name}</CardTitle>
+                <CardTitle className="text-base font-medium text-foreground">{skill.name}</CardTitle>
                 <skill.Icon className="h-6 w-6 text-primary" />
               </CardHeader>
               <CardContent className="flex flex-col justify-end flex-1 pt-4">
