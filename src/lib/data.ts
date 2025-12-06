@@ -51,15 +51,15 @@ export const projects = [
 
 export const education = [
   {
-    degree: 'computer science and business systems',
-    institution: 'Panimalar engineering college',
+    degree: 'Computer Science and Business Systems',
+    institution: 'Panimalar Engineering College',
     years: '2024-2028',
     Icon: GraduationCap,
   },
   {
-    degree: 'B.S. in Software Engineering',
-    institution: 'University of California, Irvine',
-    years: '2016 - 2020',
+    degree: 'High School',
+    institution: 'Velammal Mat Hig Sec School',
+    years: '2022 - 2024',
     Icon: GraduationCap,
   },
 ];
