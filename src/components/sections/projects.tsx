@@ -9,6 +9,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { useInView } from "@/hooks/use-in-view";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const codeSnippet = `
 import os
@@ -209,7 +210,10 @@ export default function ProjectsSection() {
                         src={projectImage.imageUrl}
                         alt={project.title}
                         fill
-                        className="object-cover w-full h-full"
+                        className={cn(
+                          "object-cover w-full h-full",
+                          index === 1 && "blur-sm"
+                        )}
                         data-ai-hint={projectImage.imageHint}
                       />
                     </div>
