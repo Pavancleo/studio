@@ -14,7 +14,7 @@ export default function HeroSection() {
           performant, and user-friendly web solutions.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
-          <Button asChild size="lg">
+          <Button asChild size="lg" className="animate-glow">
             <Link href="#projects">
               View My Work
               <ArrowDown className="ml-2 h-5 w-5" />
