@@ -22,7 +22,7 @@ export default function AdminDashboard() {
       <div className="flex items-center">
         <h1 className="text-lg font-semibold md:text-2xl">Contacts</h1>
       </div>
-      <div className="flex flex-1 items-center justify-center rounded-lg border border-dashed border-black/20 shadow-sm p-4 bg-white/30 backdrop-blur-2xl">
+      <div className="flex flex-1 items-center justify-center rounded-lg border border-dashed border-black/20 shadow-sm p-4 bg-background/30 backdrop-blur-2xl">
         <Card className="w-full bg-transparent border-black/20 text-foreground">
           <CardHeader>
             <CardTitle>Contact Messages</CardTitle>

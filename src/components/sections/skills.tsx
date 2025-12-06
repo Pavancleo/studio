@@ -18,7 +18,7 @@ export default function SkillsSection() {
           {skills.map((skill) => (
             <Card 
               key={skill.name} 
-              className="flex flex-col bg-white/30 backdrop-blur-2xl border border-black/10 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/50 hover:border-primary hover:shadow-[0_0_25px_5px_hsl(var(--primary)/20%)] hover:-translate-y-1"
+              className="flex flex-col bg-background/30 backdrop-blur-2xl border border-black/10 rounded-xl shadow-lg transition-all duration-300 hover:bg-background/50 hover:border-primary hover:shadow-[0_0_25px_5px_hsl(var(--primary)/20%)] hover:-translate-y-1"
             >
               <CardHeader className="flex flex-row items-center justify-between pb-2">
                 <CardTitle className="text-base font-medium text-foreground">{skill.name}</CardTitle>

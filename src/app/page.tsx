@@ -17,17 +17,17 @@ export default function Home() {
           src={bgImage.imageUrl}
           alt={bgImage.description}
           fill
-          className="object-cover"
+          className="object-cover opacity-20"
           data-ai-hint={bgImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-white/60 z-0"></div>
+      <div className="absolute inset-0 bg-background/60 z-0"></div>
 
       <div className="relative z-10">
         <Header />
         <main className="flex-1">
           <HeroSection />
-          <div className="bg-white/30 backdrop-blur-2xl">
+          <div className="bg-background/30 backdrop-blur-2xl">
             <SkillsSection />
             <ProjectsSection />
           </div>

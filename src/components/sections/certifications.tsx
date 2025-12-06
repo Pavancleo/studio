@@ -9,7 +9,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function CertificationsSection() {
   return (
-    <section id="certifications" className="py-16 md:py-24 bg-white/30 backdrop-blur-2xl">
+    <section id="certifications" className="py-16 md:py-24 bg-background/30 backdrop-blur-2xl">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-foreground">
@@ -26,7 +26,7 @@ export default function CertificationsSection() {
               <Dialog key={cert.name}>
                 <DialogTrigger asChild>
                   <Card 
-                    className="flex items-start p-6 bg-white/30 rounded-xl shadow-md transition-all duration-300 cursor-pointer backdrop-blur-2xl border border-black/10 hover:border-primary hover:bg-white/50 hover:shadow-[0_0_25px_5px_hsl(var(--primary)/20%)] hover:-translate-y-1"
+                    className="flex items-start p-6 bg-background/30 rounded-xl shadow-md transition-all duration-300 cursor-pointer backdrop-blur-2xl border border-black/10 hover:border-primary hover:bg-background/50 hover:shadow-[0_0_25px_5px_hsl(var(--primary)/20%)] hover:-translate-y-1"
                   >
                     <cert.Icon className="h-8 w-8 text-primary mr-4 mt-1 flex-shrink-0" />
                     <div>
