@@ -131,6 +131,10 @@ export default {
             animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
           },
         },
+        wave: {
+          '0%, 100%': { transform: 'translateY(0) rotate(-5deg)' },
+          '50%': { transform: 'translateY(-6px) rotate(5deg)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -140,6 +144,7 @@ export default {
         'text-shake': 'text-shake 0.5s linear infinite',
         animate: 'animate 25s linear infinite',
         bounce: 'bounce 1s infinite',
+        wave: 'wave 2.5s ease-in-out infinite',
       },
     },
   },
