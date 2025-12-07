@@ -16,7 +16,7 @@ const EyeIcon = (props: React.SVGProps<SVGSVGElement>) => (
     strokeLinejoin="round"
     {...props}
   >
-    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10 7Z" />
     <circle cx="12" cy="12" r="3" />
   </svg>
 );
@@ -46,8 +46,8 @@ export default function LoadingIndicator() {
         {loading ? (
           <span className="flex items-center gap-2">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-foreground opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-foreground/80"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
             analysing
           </span>
