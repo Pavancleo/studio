@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
+import { Eye } from 'lucide-react';
 
 export default function LoadingIndicator() {
   const [loading, setLoading] = useState(true);
@@ -33,7 +34,10 @@ export default function LoadingIndicator() {
             analysing
           </span>
         ) : (
-          <span>observing....</span>
+          <span className="flex items-center gap-2">
+            <Eye className="h-4 w-4" />
+            observing....
+          </span>
         )}
       </div>
     </div>
