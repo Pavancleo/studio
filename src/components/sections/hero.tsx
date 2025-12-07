@@ -4,9 +4,12 @@ import { ArrowDown } from "lucide-react";
 import AnimatedBackground from "@/components/effects/animated-background";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import Typewriter from "@/components/effects/typewriter";
 
 export default function HeroSection() {
   const bgImage = PlaceHolderImages.find(p => p.id === 'skills-background-light');
+  const descriptionText = "A passionate developer transforming ideas into elegant, performant, and user-friendly web solutions.";
+
   return (
     <section id="hero" className="relative h-[calc(100vh-3.5rem)] w-full">
       {bgImage && (
@@ -24,10 +27,9 @@ export default function HeroSection() {
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-foreground">
           Pavan K
         </h1>
-        <p className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-          A passionate developer transforming ideas into elegant,
-          performant, and user-friendly web solutions.
-        </p>
+        <div className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl h-20 md:h-16">
+          <Typewriter text={descriptionText} typingSpeed={50} />
+        </div>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Button asChild size="lg" className="animate-glow">
             <Link href="#projects">
