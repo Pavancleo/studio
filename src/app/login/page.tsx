@@ -14,25 +14,29 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Waves } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 import LiquidBackground from "@/components/effects/liquid-background";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showErrorDialog, setShowErrorDialog] = useState(false);
   const router = useRouter();
-  const { toast } = useToast();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (email === "pavan2006007@gmail.com" && password === "Pxvxn@2006") {
       router.push("/admin");
     } else {
-      toast({
-        variant: "destructive",
-        title: "Login Failed",
-        description: "Please check your email and password.",
-      });
+      setShowErrorDialog(true);
     }
   };
 
@@ -89,6 +93,22 @@ export default function LoginPage() {
           </div>
         </CardContent>
       </Card>
+
+      <AlertDialog open={showErrorDialog} onOpenChange={setShowErrorDialog}>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Login Failed</AlertDialogTitle>
+            <AlertDialogDescription>
+              Please check your email and password and try again.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogAction onClick={() => setShowErrorDialog(false)}>
+              OK
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 }
