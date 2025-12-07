@@ -176,15 +176,21 @@ function CodeDialog({ projectTitle }: { projectTitle: string }) {
 
 
 export default function ProjectsSection() {
-  const { ref, inView } = useInView<HTMLElement>();
+  const { ref, inView } = useInView<HTMLElement>({ threshold: 0.1 });
+  const { ref: titleRef, inView: titleInView } = useInView<HTMLDivElement>({ threshold: 0.9 });
+  const { ref: cardsRef, inView: cardsInView } = useInView<HTMLDivElement>({ threshold: 0.2 });
+
   return (
     <section 
       id="projects" 
       ref={ref}
-      className={`py-16 md:py-24 bg-pink-100/50 backdrop-blur-2xl border-t border-b border-black/10 transition-all duration-1000 ${inView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+      className={`py-16 md:py-24 bg-pink-100/50 backdrop-blur-2xl border-t border-b border-black/10 transition-all duration-1000 ${inView ? 'opacity-100' : 'opacity-0'}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        <div 
+          ref={titleRef}
+          className={`text-center transition-all duration-1000 ${titleInView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+        >
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-foreground">
             Featured Projects
           </h2>
@@ -192,13 +198,17 @@ export default function ProjectsSection() {
             Here are some of the projects I'm proud to have worked on.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <div 
+          ref={cardsRef}
+          className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2"
+        >
           {projects.map((project, index) => {
             const projectImage = project.imageId ? PlaceHolderImages.find(p => p.id === project.imageId) : undefined;
             return (
               <Card 
                 key={`${project.title}-${index}`}
-                className="overflow-hidden bg-background/30 backdrop-blur-2xl border border-black/10 rounded-xl shadow-lg transition-all duration-300 hover:bg-background/50 hover:border-primary hover:shadow-[0_0_35px_8px_hsl(var(--primary)/40%)] hover:-translate-y-1"
+                className={`overflow-hidden bg-background/30 backdrop-blur-2xl border border-black/10 rounded-xl shadow-lg transition-all duration-300 hover:bg-background/50 hover:border-primary hover:shadow-[0_0_35px_8px_hsl(var(--primary)/40%)] hover:-translate-y-1 ${cardsInView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+                style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardHeader>
                   <CardTitle className="text-foreground">{project.title}</CardTitle>

@@ -7,17 +7,23 @@ import { useInView } from "@/hooks/use-in-view";
 import AnimatedBackground from "@/components/effects/animated-background";
 
 export default function SkillsSection() {
-  const { ref, inView } = useInView<HTMLElement>();
+  const { ref, inView } = useInView<HTMLElement>({ threshold: 0.2 });
+  const { ref: titleRef, inView: titleInView } = useInView<HTMLDivElement>({ threshold: 0.9 });
+  const { ref: cardsRef, inView: cardsInView } = useInView<HTMLDivElement>({ threshold: 0.2 });
+
   return (
     <section 
       id="skills" 
       ref={ref}
-      className={`relative overflow-hidden transition-all duration-1000 ${inView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+      className={`relative overflow-hidden transition-all duration-1000 ${inView ? 'opacity-100' : 'opacity-0'}`}
     >
       <AnimatedBackground />
       <div className="relative z-10 bg-primary/10 backdrop-blur-sm py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div 
+            ref={titleRef}
+            className={`text-center transition-all duration-1000 ${titleInView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+          >
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
               Technical Proficiency
             </h2>
@@ -25,11 +31,15 @@ export default function SkillsSection() {
               A snapshot of my core competencies and tools I love to work with.
             </p>
           </div>
-          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {skills.map((skill) => (
+          <div 
+            ref={cardsRef}
+            className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+          >
+            {skills.map((skill, index) => (
               <Card 
                 key={skill.name} 
-                className="flex flex-col bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/20 hover:border-white/30 hover:shadow-[0_0_20px_4px_hsl(var(--chart-3)/40%)] hover:-translate-y-1"
+                className={`flex flex-col bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/20 hover:border-white/30 hover:shadow-[0_0_20px_4px_hsl(var(--chart-3)/40%)] hover:-translate-y-1 ${cardsInView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+                style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                   <CardTitle className="text-base font-medium text-foreground">{skill.name}</CardTitle>

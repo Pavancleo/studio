@@ -6,17 +6,23 @@ import { useInView } from "@/hooks/use-in-view";
 import AnimatedBackground from "@/components/effects/animated-background";
 
 export default function EducationSection() {
-  const { ref, inView } = useInView<HTMLElement>();
+  const { ref, inView } = useInView<HTMLElement>({ threshold: 0.1 });
+  const { ref: titleRef, inView: titleInView } = useInView<HTMLDivElement>({ threshold: 0.9 });
+  const { ref: timelineRef, inView: timelineInView } = useInView<HTMLDivElement>({ threshold: 0.2 });
+
   return (
     <section 
       id="education" 
       ref={ref}
-      className={`relative overflow-hidden transition-all duration-1000 ${inView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+      className={`relative overflow-hidden transition-all duration-1000 ${inView ? 'opacity-100' : 'opacity-0'}`}
     >
       <AnimatedBackground />
       <div className="relative z-10 bg-primary/10 backdrop-blur-sm py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div 
+            ref={titleRef}
+            className={`text-center transition-all duration-1000 ${titleInView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+          >
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-shake">
               Education
             </h2>
@@ -24,14 +30,18 @@ export default function EducationSection() {
               My academic journey and qualifications.
             </p>
           </div>
-          <div className="relative mt-12">
+          <div 
+            ref={timelineRef}
+            className="relative mt-12"
+          >
             <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-black/10"></div>
             {education.map((item, index) => (
               <div
                 key={item.institution}
-                className={`relative mb-8 flex w-full items-center ${
+                className={`relative mb-8 flex w-full items-center transition-all duration-1000 ${timelineInView ? 'opacity-100 animate-bounce-in' : 'opacity-0'} ${
                   index % 2 === 0 ? "justify-start" : "justify-end"
                 }`}
+                style={{ animationDelay: `${index * 200}ms` }}
               >
                 <div
                   className={cn(
