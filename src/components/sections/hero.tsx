@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Notebook } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import AnimatedBackground from "@/components/effects/animated-background";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -38,7 +38,6 @@ export default function HeroSection() {
               <ArrowDown className="ml-2 h-5 w-5" />
             </Link>
           </Button>
-          <Notebook className="mt-4 h-8 w-8 text-foreground/80" />
         </div>
       </div>
     </section>
