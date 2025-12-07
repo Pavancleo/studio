@@ -46,7 +46,7 @@ export default function LoginPage() {
       <Card className="relative z-10 mx-auto max-w-sm border-white/20 bg-white/10 text-foreground shadow-2xl backdrop-blur-lg">
         <CardHeader>
           <div className="flex justify-center mb-4">
-             <Waves className="h-10 w-10 text-primary animate-wave" />
+             <Waves className="h-10 w-10 text-primary" />
           </div>
           <CardTitle className="text-2xl text-center">Admin Login</CardTitle>
           <CardDescription className="text-center text-muted-foreground">

@@ -20,7 +20,7 @@ export default function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Waves className="h-6 w-6 text-primary animate-wave" />
+            <Waves className="h-6 w-6 text-primary" />
             <span className="font-bold font-headline sm:inline-block">
               P | Portfolio
             </span>
