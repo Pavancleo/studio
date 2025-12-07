@@ -32,7 +32,7 @@ export default function HeroSection() {
           <Typewriter text={descriptionText} typingSpeed={30} />
         </div>
         <div className="mt-10 flex flex-col items-center justify-center gap-4">
-          <Button asChild size="lg" className="animate-red-glow">
+          <Button asChild size="lg" className="animate-glow">
             <Link href="#projects">
               View My Work
               <ArrowDown className="ml-2 h-5 w-5" />
