@@ -1,13 +1,23 @@
+"use client";
+
+import * as React from "react";
 import Link from "next/link";
 import { Waves } from "lucide-react";
 import { contactInfo } from "@/lib/data";
 import AnimatedBackground from "@/components/effects/animated-background";
+import { useInView } from "@/hooks/use-in-view";
 
 export default function Footer() {
+  const { ref, inView } = useInView<HTMLElement>({ threshold: 0.1 });
+
   return (
-    <footer id="contact" className="relative border-t border-black/10 overflow-hidden">
+    <footer 
+      id="contact" 
+      ref={ref}
+      className={`relative border-t border-black/10 overflow-hidden transition-all duration-1000 ${inView ? 'opacity-100' : 'opacity-0'}`}
+    >
       <AnimatedBackground />
-      <div className="relative z-10 bg-background/80 backdrop-blur-sm">
+      <div className={`relative z-10 bg-background/80 backdrop-blur-sm transition-all duration-1000 ${inView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}>
         <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
             <div className="flex items-center space-x-2">
