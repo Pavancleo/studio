@@ -11,7 +11,7 @@ export default function HeroSection() {
   const descriptionText = "A passionate developer transforming ideas into elegant, performant, and user-friendly web solutions.";
 
   return (
-    <section id="hero" className="relative h-[calc(100vh-3.5rem)] w-full">
+    <section id="hero" className="relative h-[calc(100vh-3.5rem)] w-full overflow-hidden">
       {bgImage && (
         <Image
           src={bgImage.imageUrl}
@@ -25,7 +25,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-background/60 z-0"></div>
       <AnimatedBackground />
       <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
-        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-foreground animate-bounce-in">
+        <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-foreground animate-hero-name-in">
           Pavan K
         </h1>
         <div className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl h-20 md:h-16">
