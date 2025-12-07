@@ -28,7 +28,7 @@ export default function HeroSection() {
           Pavan K
         </h1>
         <div className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl h-20 md:h-16">
-          <Typewriter text={descriptionText} typingSpeed={50} />
+          <Typewriter text={descriptionText} typingSpeed={30} />
         </div>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <Button asChild size="lg" className="animate-glow">
