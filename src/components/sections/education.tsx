@@ -14,7 +14,7 @@ export default function EducationSection() {
       className={`relative overflow-hidden border-t border-b border-black/10 transition-all duration-1000 ${inView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
     >
       <AnimatedBackground />
-      <div className="relative z-10 bg-blue-100/50 backdrop-blur-sm py-16 md:py-24">
+      <div className="relative z-10 bg-primary/10 backdrop-blur-sm py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-shake">
