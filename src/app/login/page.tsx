@@ -15,6 +15,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Waves } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import LiquidBackground from "@/components/effects/liquid-background";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -36,8 +37,9 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <Card className="mx-auto max-w-sm bg-background/50 backdrop-blur-2xl border-black/10 text-foreground">
+    <div className="relative flex min-h-screen items-center justify-center">
+      <LiquidBackground />
+      <Card className="relative z-10 mx-auto max-w-sm border-white/20 bg-white/10 text-foreground shadow-2xl backdrop-blur-lg">
         <CardHeader>
           <div className="flex justify-center mb-4">
              <Waves className="h-10 w-10 text-primary" />
@@ -57,7 +59,7 @@ export default function LoginPage() {
                   type="email"
                   placeholder="m@example.com"
                   required
-                  className="bg-slate-200/60 border-black/20"
+                  className="border-white/30 bg-white/20 text-foreground placeholder:text-muted-foreground"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -70,7 +72,7 @@ export default function LoginPage() {
                   id="password"
                   type="password"
                   required
-                  className="bg-slate-200/60 border-black/20"
+                  className="border-white/30 bg-white/20 text-foreground"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
@@ -81,7 +83,7 @@ export default function LoginPage() {
             </div>
           </form>
           <div className="mt-4 text-center text-sm">
-            <Link href="/" className="underline">
+            <Link href="/" className="underline text-muted-foreground hover:text-primary">
               Back to main site
             </Link>
           </div>
