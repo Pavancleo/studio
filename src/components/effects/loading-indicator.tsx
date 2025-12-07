@@ -42,7 +42,7 @@ export default function LoadingIndicator() {
       "fixed bottom-4 left-4 z-50 transition-all duration-500 ease-out",
       visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
     )}>
-      <div className="rounded-full border border-white/20 bg-background/50 px-4 py-2 text-sm text-foreground/80 shadow-lg backdrop-blur-md">
+      <div className="rounded-full border border-white/20 bg-background/30 px-4 py-2 text-sm text-foreground/80 shadow-lg backdrop-blur-lg">
         {loading ? (
           <span className="flex items-center gap-2">
             <span className="relative flex h-2 w-2">
