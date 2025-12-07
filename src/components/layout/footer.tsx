@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
             <div className="flex items-center space-x-2">
-              <Waves className={`h-6 w-6 text-primary transition-all duration-500 animate-wave ${inView ? 'opacity-100' : 'opacity-0'}`} />
+              <Waves className={`h-6 w-6 text-primary transition-all duration-500 ${inView ? 'opacity-100' : 'opacity-0'}`} />
               <WordBounce text="P | Portfolio" parentInView={inView} className="font-bold font-headline" />
             </div>
             <div className="flex flex-col items-center gap-4 text-center md:items-end">
