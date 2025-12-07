@@ -4,9 +4,9 @@ export default function LiquidBackground() {
   return (
     <div className="absolute inset-0 z-0 overflow-hidden bg-background">
       <div className="relative h-full w-full">
-        <div className="blob-1 absolute -top-1/4 left-1/4 h-[500px] w-[500px] animate-blob rounded-full bg-yellow-400 opacity-50 mix-blend-multiply blur-2xl filter" />
-        <div className="blob-2 absolute -bottom-1/4 right-1/4 h-[500px] w-[500px] animate-blob rounded-full bg-red-400 opacity-50 mix-blend-multiply blur-2xl filter" />
-        <div className="blob-3 absolute -bottom-1/2 left-1/3 h-[450px] w-[450px] animate-blob-reverse rounded-full bg-green-400 opacity-50 mix-blend-multiply blur-2xl filter" />
+        <div className="blob-1 absolute -top-1/4 left-1/4 h-[500px] w-[500px] animate-blob rounded-full bg-purple-500 opacity-50 mix-blend-multiply blur-2xl filter" />
+        <div className="blob-2 absolute -bottom-1/4 right-1/4 h-[500px] w-[500px] animate-blob rounded-full bg-pink-500 opacity-50 mix-blend-multiply blur-2xl filter" />
+        <div className="blob-3 absolute -bottom-1/2 left-1/3 h-[450px] w-[450px] animate-blob-reverse rounded-full bg-blue-500 opacity-50 mix-blend-multiply blur-2xl filter" />
       </div>
       <style jsx>{`
         @keyframes blob {
