@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Notebook } from "lucide-react";
 import AnimatedBackground from "@/components/effects/animated-background";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
@@ -31,13 +31,14 @@ export default function HeroSection() {
         <div className="mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl h-20 md:h-16">
           <Typewriter text={descriptionText} typingSpeed={30} />
         </div>
-        <div className="mt-10 flex flex-wrap justify-center gap-4">
+        <div className="mt-10 flex flex-col items-center justify-center gap-4">
           <Button asChild size="lg" className="animate-glow">
             <Link href="#projects">
               View My Work
               <ArrowDown className="ml-2 h-5 w-5" />
             </Link>
           </Button>
+          <Notebook className="mt-4 h-8 w-8 text-foreground/80" />
         </div>
       </div>
     </section>
