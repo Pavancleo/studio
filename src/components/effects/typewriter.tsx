@@ -18,12 +18,11 @@ export default function Typewriter({
   const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
-    setDisplayedText('');
     setIsTyping(true);
     let i = 0;
     const intervalId = setInterval(() => {
       if (i < text.length) {
-        setDisplayedText((prev) => prev + text.charAt(i));
+        setDisplayedText(text.substring(0, i + 1));
         i++;
       } else {
         clearInterval(intervalId);
