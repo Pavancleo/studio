@@ -27,7 +27,7 @@ export default function AdminLayout({
         <div className="flex h-full max-h-screen flex-col gap-2">
           <div className="flex h-14 items-center border-b border-black/20 px-4 lg:h-[60px] lg:px-6">
             <Link href="/" className="flex items-center gap-2 font-semibold">
-              <Waves className="h-6 w-6 text-primary" />
+              <Waves className="h-6 w-6 text-primary animate-bounce" />
               <span className="font-headline">Liquidfolio</span>
             </Link>
             <Button variant="outline" size="icon" className="ml-auto h-8 w-8 bg-transparent">
