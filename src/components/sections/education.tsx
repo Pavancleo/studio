@@ -11,7 +11,7 @@ export default function EducationSection() {
     <section 
       id="education" 
       ref={ref}
-      className={`relative overflow-hidden border-t border-b border-black/10 transition-all duration-1000 ${inView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
+      className={`relative overflow-hidden transition-all duration-1000 ${inView ? 'opacity-100 animate-bounce-in' : 'opacity-0'}`}
     >
       <AnimatedBackground />
       <div className="relative z-10 bg-primary/10 backdrop-blur-sm py-16 md:py-24">
