@@ -54,7 +54,7 @@ export default function LoadingIndicator() {
         ) : (
           <span className="flex items-center gap-2">
             <EyeIcon className="h-4 w-4" />
-            observing....
+            observing...
           </span>
         )}
       </div>
