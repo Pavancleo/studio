@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     title: 'Phishing Attack Simulation & Detection',
-    description: 'working',
+    description: 'A project that simulates phishing attacks and detects malicious emails to improve security.',
     repoUrl: 'https://github.com/Pavancleo/PHISHING-DETECTION',
   },
   {
