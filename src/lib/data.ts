@@ -34,7 +34,7 @@ export const projects = [
   {
     title: 'Password Cracking & Hashing Algorithms',
     description: 'This project explores password cracking methods and hashing algorithms.',
-    repoUrl: 'https.github.com/Pavancleo/Password-Cracking-and-Hashing-Algorithms',
+    repoUrl: 'https://github.com/Pavancleo/password-cracking',
   },
   {
     title: 'In Development',
