@@ -5,7 +5,6 @@ import SkillsSection from "@/components/sections/skills";
 import ProjectsSection from "@/components/sections/projects";
 import EducationSection from "@/components/sections/education";
 import CertificationsSection from "@/components/sections/certifications";
-import LoadingIndicator from "@/components/effects/loading-indicator";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
         </main>
         <Footer />
       </div>
-      <LoadingIndicator />
     </div>
   );
 }

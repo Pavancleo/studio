@@ -24,12 +24,12 @@ export const projects = [
     title: 'AI-ChatBot',
     description: 'A conversational AI chatbot built with modern NLP techniques to assist users.',
     imageId: 'project-1',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/Pavancleo/AI-chatbot',
   },
   {
-    title: 'In Development',
+    title: 'Phishing Attack Simulation & Detection',
     description: 'working',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/Pavancleo/PHISHING-DETECTION',
   },
   {
     title: 'Coming soon...',
