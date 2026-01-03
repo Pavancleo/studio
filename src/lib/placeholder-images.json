@@ -9,19 +9,19 @@
     {
       "id": "project-2",
       "description": "Placeholder for second project",
-      "imageUrl": "/images/pavan6.jpg",
+      "imageUrl": "/images/pavan7.jpg",
       "imageHint": "business meeting"
     },
     {
       "id": "project-3",
       "description": "Placeholder for third project",
-      "imageUrl": "",
+      "imageUrl": "/images/pavan8.jpg",
       "imageHint": "creative design"
     },
     {
       "id": "project-4",
       "description": "Placeholder for fourth project",
-      "imageUrl": "/images/pavan5.jpg",
+      "imageUrl": "/images/pavan9.jpg",
       "imageHint": "data analytics"
     },
     {
