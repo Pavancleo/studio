@@ -33,12 +33,12 @@ export const projects = [
   },
   {
     title: 'Password Cracking & Hashing Algorithms',
-    description: 'This project explores password cracking methods and hashing algorithms.',
+    description: 'An exploration of password security, demonstrating cracking techniques and analyzing hashing algorithms.',
     repoUrl: 'https://github.com/Pavancleo/password-cracking',
   },
   {
-    title: 'In Development',
-    description: 'This project is currently in development. More details to come.',
+    title: 'in development',
+    description: 'This project is currently in development. Stay tuned for updates!',
     repoUrl: '#',
   },
 ];
