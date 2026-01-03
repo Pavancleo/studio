@@ -32,13 +32,13 @@ export const projects = [
     repoUrl: 'https://github.com/Pavancleo/PHISHING-DETECTION',
   },
   {
-    title: 'Coming soon...',
-    description: 'Another exciting project is in the works. Stay tuned for more details!',
-    repoUrl: '#',
+    title: 'Password Cracking & Hashing Algorithms',
+    description: 'This project explores password cracking methods and hashing algorithms.',
+    repoUrl: 'https.github.com/Pavancleo/Password-Cracking-and-Hashing-Algorithms',
   },
   {
-    title: 'Coming soon...',
-    description: 'Another exciting project is in the works. Stay tuned for more details!',
+    title: 'In Development',
+    description: 'This project is currently in development. More details to come.',
     repoUrl: '#',
   },
 ];
