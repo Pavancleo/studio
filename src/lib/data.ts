@@ -29,16 +29,19 @@ export const projects = [
   {
     title: 'Phishing Attack Simulation & Detection',
     description: 'A project that simulates phishing attacks and detects malicious emails to improve security.',
+    imageId: 'project-2',
     repoUrl: 'https://github.com/Pavancleo/PHISHING-DETECTION',
   },
   {
     title: 'Password Cracking & Hashing Algorithms',
     description: 'An exploration of password security, demonstrating cracking techniques and analyzing hashing algorithms.',
+    imageId: 'project-3',
     repoUrl: 'https://github.com/Pavancleo/password-cracking',
   },
   {
     title: 'in development',
     description: 'This project is currently in development. Stay tuned for updates!',
+    imageId: 'project-4',
     repoUrl: '#',
   },
 ];
