@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "P | Portfolio",
   description: "A liquid-smooth portfolio built with Next.js and Firebase.",
-  icons: "/images/pavan7.jpg",
+  icons: "/images/pavan10.jpg",
 };
 
 export default function RootLayout({
