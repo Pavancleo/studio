@@ -1,5 +1,5 @@
 
-import { Code, Bot, Database, Cloudy, GitBranch, Briefcase, Award, GraduationCap, Github, Linkedin, Mail, KeyRound } from 'lucide-react';
+import { Code, Bot, Database, Cloudy, GitBranch, Briefcase, Award, GraduationCap, Github, Linkedin, Mail, KeyRound, Instagram } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export const navigationLinks = [
@@ -96,6 +96,7 @@ export const contactInfo = {
   socials: [
     { name: 'GitHub', url: 'https://github.com/Pavancleo', Icon: Github },
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/pavan-k-4bb2ba308/', Icon: Linkedin },
+    { name: 'Instagram', url: 'https://www.instagram.com/pavxn.__.cleo/', Icon: Instagram },
   ],
 };
 
