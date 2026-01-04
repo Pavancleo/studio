@@ -39,7 +39,7 @@ export const projects = [
     repoUrl: 'https://github.com/Pavancleo/password-cracking',
   },
   {
-    title: 'in development',
+    title: 'Project In Development',
     description: 'This project is currently in development. Stay tuned for updates!',
     imageId: 'project-4',
     repoUrl: '#',
